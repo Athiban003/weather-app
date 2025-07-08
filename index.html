@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="cloudy.png" title="weather icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <p class="header-text">Weather Dashboard</p>
+    </header>
+    <main class="main-container">
+      <section class="section1">
+        <p>Enter a city Name</p>
+        <input type="text" placeholder="Eg. Tokyo" class="text-input" />
+        <br />
+        <p
+          class="city-error"
+          style="color: red; margin-top: 0.5rem; font-size: 3rem"
+        ></p>
+        <button class="search-btn">Search</button>
+        <br />
+
+        <div class="separator">
+          <span>or</span>
+        </div>
+
+        <button class="current-location-btn" onclick="getLocation();">
+          Use Current Location
+        </button>
+      </section>
+      <section class="section2">
+        <div class="section2-forecast"></div>
+        <div class="section2-forecast-cards">
+          <p class="future-forecast-header">2-Day Forecast</p>
+          <div class="future-forecast"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,21 @@
+%button {
+  width: 80%;
+  height: 4rem;
+  margin-top: 2rem;
+  color: white;
+  border-radius: 0.4rem;
+  border: 1px rgb(145, 143, 143) solid;
+  cursor: pointer;
+  font-size: large;
+}
+
+.search-btn {
+  @extend %button;
+  background-color: blue;
+  margin-bottom: 2rem;
+}
+
+.current-location-btn {
+  @extend %button;
+  background-color: rgb(126, 125, 125);
+}
